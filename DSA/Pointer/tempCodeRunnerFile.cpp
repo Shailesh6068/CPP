@@ -1,0 +1,1 @@
+cout<<"*ptr++ :"<<*ptr++<<"           ptr after ++ :"<<*ptr<<"\n"; 

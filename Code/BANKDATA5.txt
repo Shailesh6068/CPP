@@ -1,0 +1,12 @@
+
+
+Name: SHailesh
+Account Type: Saving
+Account Number: 1
+Balance: 410
+
+Name: Ramesh
+Account Type: Saving
+Account Number: 2
+Balance: 1000
+

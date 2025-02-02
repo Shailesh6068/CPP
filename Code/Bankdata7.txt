@@ -1,0 +1,15 @@
+Name: Shyam
+Account Type: Saving
+Account Number: 123
+Balance: 11
+
+Name: Samir
+Account Type: Saving
+Account Number: 12
+Balance: 12
+
+Name: AA
+Account Type: SAre
+Account Number: 13
+Balance: 145
+

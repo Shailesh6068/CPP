@@ -1,0 +1,17 @@
+Name: Shailes
+Account Type: Saving
+Balance: 65
+
+Balance: 123
+
+Name: Nilesh
+Account Type: saving
+Balance: 55
+
+Balance: 12
+
+Name: Ramesh
+Account Type: SAvings
+Account Number: 789
+Balance: 45
+

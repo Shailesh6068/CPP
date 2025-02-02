@@ -1,0 +1,23 @@
+Name: Shailesh
+Account Type: Saving
+Account Number: 4502
+Balance: 452
+
+Name: Nilesh
+Account Type: Regural
+Balance: 1100
+
+Balance: 100
+
+Name: OM patil
+Account Type: Regural
+Balance: 1100
+
+Balance: 1000
+
+Name: Rajesh pawar
+Account Type: Savings
+Balance: 100
+
+Balance: 45
+

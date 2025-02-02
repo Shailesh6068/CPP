@@ -1,0 +1,16 @@
+Ticket No.:MAH001
+Name :Shailesh Pawar
+Phone Number :7219255059
+Type of Seat :GEneral 
+Number of Passenger :
+Adult :1       Child :2      Senior citizen :1
+Total Payable Amount :400
+
+Ticket No.:MAH002
+Name :Om Patil
+Phone Number :9850587829
+Type of Seat :Reserve ( AC )
+Number of Passenger :
+Adult :2       Child :3      Senior citizen :4
+Total Payable Amount :1250
+

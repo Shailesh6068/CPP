@@ -1,0 +1,31 @@
+
+Ticket No.:MAH001
+Name :Shailesh Pawar
+Phone Number :7219255059
+Type of Seat :General 
+Number of Passenger :
+Adult :1       Child :2      Senior citizen :2
+
+Ticket No.:MAH002
+Name :Rajkiran More
+Phone Number :7887449995
+Type of Seat :General 
+Number of Passenger :
+Adult :1       Child :2      Senior citizen :3
+
+Ticket No.: MAH001
+Name: Shailesh Pawar
+Phone Number: 7219255059
+Type of Seat: General 
+Number of Passenger: 
+Adult: 1         Child: 2          Senior citizen: 3
+Total Payable Amount: 500
+
+Ticket No.: MAH002
+Name: Ramesh
+Phone Number: 7219255059
+Type of Seat: General 
+Number of Passenger: 
+Adult: 2         Child: 3          Senior citizen: 4
+Total Payable Amount: 800
+

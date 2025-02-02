@@ -1,0 +1,10 @@
+Name: Rakesh
+Account Type: Saving
+Account Number: 75
+Balance: 12
+
+Name: Raghu
+Account Type: Saving
+Account Number: 789
+Balance: 78
+
