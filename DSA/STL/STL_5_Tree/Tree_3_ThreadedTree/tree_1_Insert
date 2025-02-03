@@ -1,0 +1,98 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+class Node {
+public:
+    int data;
+    Node* left;
+    Node* right;
+    bool rightThread; // True if right pointer is a thread (not a child)
+
+    Node(int x) {
+        data = x;
+        left = right = nullptr;
+        rightThread = false;
+    }
+};
+
+// Function to Insert Node in a Right-Threaded Binary Tree
+// If root is NULL, create a new node and return it.
+// If target < root, insert into the left subtree.
+// If target > root, insert into the right subtree.
+// When inserting on the right, update the rightThread to point to the inorder successor.
+Node* InsertNode(Node* root, int target) {
+    
+    Node* newNode = new Node(target);
+
+    if (!root)
+       { return newNode;}
+
+    Node* parent = nullptr;
+    Node* current = root;
+
+    while (current) 
+    {
+        parent = current;
+        if (target < current->data) 
+        {
+            if (!current->left) {
+                current->left = newNode;
+                newNode->right = current;  // Thread to inorder successor
+                newNode->rightThread = true;
+                return root;
+            }
+            current = current->left;
+        } else 
+        {
+            if (!current->right || current->rightThread) {
+                newNode->right = current->right; // Maintain thread
+                newNode->rightThread = true;
+                current->right = newNode;
+                current->rightThread = false;  // Converted to a normal child
+                return root;
+            }
+            current = current->right;
+        }
+    }
+    return root;
+}
+
+// Inorder Traversal using Threading (No Recursion, No Stack)
+void inorderTraversal(Node* root) {
+    Node* current = root;
+
+    // Move to the leftmost node
+    while (current && current->left) 
+        current = current->left;
+
+    while (current) {
+        cout << current->data << " ";
+
+        if (current->rightThread) {
+            current = current->right; // Follow the thread
+        } else {
+            current = current->right;
+            while (current && current->left) 
+                current = current->left;  // Move to next inorder node
+        }
+    }
+}
+int main() {
+    vector<int> v(7);
+    
+    cout << "Enter 7 Elements: \n";
+    for (int i = 0; i < v.size(); i++) {
+        cin >> v[i];
+    }
+      
+    Node* root = nullptr;
+    for (int i = 0; i < v.size(); i++) {
+        root = InsertNode(root, v[i]);
+    }
+
+    cout << "Inorder Traversal of Threaded Binary Tree:\n";
+    inorderTraversal(root);
+
+    return 0;
+}
